@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/operate"
+    tools:context=".RegisterFacultad"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp">
+
+    <TextView
+        android:id="@+id/textFacu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRAR FACULTAD NUEVA"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="179dp"
+        tools:layout_editor_absoluteY="18dp" />
+
+    <EditText
+        android:id="@+id/editFacultad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Facultad"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnRegistroFacu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Facultad" />
+</LinearLayout>

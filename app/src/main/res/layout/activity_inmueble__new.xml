@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/operate"
+
+    tools:context=".Inmueble_new"
+
+    android:orientation="vertical"
+   >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="50dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REGISTRO DE NUEVO PRODUCTO"
+                android:textColor="#FFC107"
+                android:textSize="24sp"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:id="@+id/edNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nombre del producto"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edCodigo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="Codigo"
+                    android:inputType="textPersonName"
+                    android:text="No disponible" />
+
+                <Button
+                    android:id="@+id/btnScanner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onclick"
+                    android:text="Obtener Codigo" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/edMarca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Marca"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edModelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Modelo"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edTipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Tipo"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Color"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edSerie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Serie"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edEstado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="Estado"
+                android:inputType="textPersonName" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    app:srcCompat="@drawable/camara" />
+
+                <Button
+                    android:id="@+id/btnTake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onclick"
+                    android:text="Seleccion IMAGEN" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnEnviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onclick"
+                android:text="ENVIAR REGISTRO FINAL" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

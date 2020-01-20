@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ventasejemplo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="true" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/android_ico_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Menu_controlador"></activity>
+        <activity android:name=".OperateUsuario" />
+        <activity android:name=".OperateInmueble" />
+        <activity android:name=".RegisterMovimiento" />
+        <activity android:name=".RegisterAmbiente" />
+        <activity android:name=".RegisterEdificio" />
+        <activity android:name=".RegisterEscuela" />
+        <activity android:name=".RegisterFacultad" />
+        <activity android:name=".Menu_Usuario" />
+        <activity android:name=".Menu_Ambiente" />
+        <activity android:name=".Menu_Inmuebles" />
+        <activity android:name=".ScannerActivity" />
+        <activity android:name=".RegisterUser" />
+        <activity android:name=".Inmueble_new" />
+        <activity android:name=".Menu" />
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

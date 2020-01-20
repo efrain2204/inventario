@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterEdificio"
+    android:orientation="vertical"
+    android:background="@drawable/operate"
+    android:gravity="center"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp">
+
+    <TextView
+        android:id="@+id/textEscuela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRAR EDIFICIO NUEVO"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="179dp"
+        tools:layout_editor_absoluteY="18dp" />
+
+    <EditText
+        android:id="@+id/editEdificio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="# Edificio"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/textSpiner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ESCUELAS DISPONIBLES"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+    <Spinner
+        android:id="@+id/sppEdificio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:popupBackground="#5E5E66"
+        android:background="#232E63" />
+
+    <Button
+        android:id="@+id/btnRegistrarEdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRAR EDIFICIO" />
+</LinearLayout>
